@@ -1,0 +1,7 @@
+@use '../utils/mixins' as *;
+
+.photos {
+  @include grid;
+
+  grid-template-rows: 1fr 1fr;
+}
