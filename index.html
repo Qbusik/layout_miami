@@ -19,7 +19,7 @@
   </head>
   <body>
 
-    <header class="header" id="header">
+    <header class="header" id="home">
 
       <div class="header__top">
         <a href="#header">
@@ -35,7 +35,7 @@
             src="src/images/icons/phone.svg"
             alt="tel">
           </a>
-          <a href="#" class="header__button">
+          <a href="#menu" class="header__button">
             <img
             class="header__burger"
             src="src/images/icons/burger.svg"
@@ -49,10 +49,43 @@
       </div>
     </header>
 
+    <div class="menu" id="menu">
+      <nav class="navigation menu__navigation">
+        <a href="#" class="logo navigation__item">
+          <img
+            src="src/images/icons/logo.svg"
+            alt="logo">
+        </a>
+        <a href="#home" class="navigation__item">
+          <img
+            src="src/images/icons/close.svg"
+            alt="close">
+        </a>
+      </nav>
+
+      <nav class="links menu__links">
+        <ul class="links__list">
+          <li class="links__item"><a href="#home" class="links__link">Home</a></li>
+          <li class="links__item"><a href="#about-us" class="links__link">About&nbsp;Us</a></li>
+          <li class="links__item"><a href="#now-on-view" class="links__link">Now&nbsp;on&nbsp;view</a></li>
+          <li class="links__item"><a href="#explore-online" class="links__link">Explore&nbsp;Online</a></li>
+          <li class="links__item"><a href="#contact" class="links__link">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <p class="menu__paragraph">The Met Fifth Avenue</p>
+      <p class="menu__paragraph">+1 212-535-7710</p>
+      <p class="menu__paragraph">The Met Cloisters</p>
+      <p class="menu__paragraph">+1 212-923-3700</p>
+      <p class="menu__paragraph">
+        <a class="menu__call-link" href="tel:+1 212-535-7710">call to order</a>
+      </p>
+    </div>
+
     <main class="main">
 
       <section class="section about">
-        <div class="about__title">
+        <div class="about__title" id="about-us">
           <p class="about__accent">Plan your visit</p>
           <h1 class="about__name">Museum hours</h1>
         </div>
@@ -96,7 +129,7 @@
       </section>
 
       <section class="section gallery">
-        <div class="gallery__center">
+        <div class="gallery__center" id="now-on-view">
           <h1 class="gallery__title">Now On View</h1>
           <p class="gallery__description">Explore exhibition gallery guides, videos, articles, and more.</p>
         </div>
@@ -175,7 +208,7 @@
       </section>
 
       <section class="section explore">
-        <div class="explore__center">
+        <div class="explore__center" id="explore-online">
           <h1 class="explore__title">More to Explore Online</h1>
         </div>
 
@@ -217,7 +250,7 @@
       </section>
 
       <section class="section contact">
-        <div class="contact__center">
+        <div class="contact__center" id="contact">
           <h1 class="contact__title">Contact us</h1>
         </div>
 
