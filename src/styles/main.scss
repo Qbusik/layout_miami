@@ -1,12 +1,12 @@
 @use 'utils/vars' as *;
 @use 'utils/reset';
 @use 'blocks/header';
-@use 'blocks/title';
 @use 'blocks/main';
 @use 'blocks/section';
 @use 'blocks/article';
 @use 'blocks/photos';
 @use 'blocks/button';
+@use 'blocks/about';
 @use 'blocks/gallery';
 @use 'blocks/explore';
 @use 'blocks/contact';

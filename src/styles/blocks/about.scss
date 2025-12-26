@@ -1,0 +1,32 @@
+@use '../utils/vars' as *;
+
+.about {
+  &__article {
+    margin-top: 32px;
+  }
+
+  &__title {
+    font-weight: 700;
+    width: 100%;
+  }
+
+  &__accent {
+    color: $accent-color;
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  &__name {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+  }
+
+  &__title-2 {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+  }
+}
