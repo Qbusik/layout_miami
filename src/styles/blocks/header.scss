@@ -13,7 +13,7 @@
   color: $white;
 
   @include for-tablet {
-    padding: 72px 50px;
+    padding: 50px 72px;
   }
 
   @include grid;

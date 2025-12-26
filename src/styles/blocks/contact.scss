@@ -1,17 +1,53 @@
+@use '../utils/vars' as *;
+@use '../utils/mixins' as *;
+
 .contact {
+  @include grid;
+
+  justify-content: center;
+
+  @include for-tablet {
+    justify-content: center;
+  }
+
   &__title {
     font-weight: 700;
     margin-bottom: 48px;
+    margin-top: 20px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.5px;
+
+    @include for-tablet {
+      font-size: 48px;
+      line-height: 48px;
+      width: 392px;
+      margin: 20px auto 48px;
+    }
   }
 
   &__center {
     text-align: center;
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
+  }
+
+  &__item {
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 3;
+    }
   }
 
   &__form {
     margin-top: 48px;
+
+    @include for-tablet {
+      margin-top: 0;
+    }
   }
 }

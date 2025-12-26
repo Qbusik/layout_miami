@@ -11,22 +11,54 @@
   grid-template-rows: 1fr auto;
   gap: 24px 20px;
 
+  @include for-tablet {
+    grid-template-rows: 186px auto;
+    gap: 24px;
+  }
+
   &--mid {
     grid-template-columns: repeat(3, 88px);
     gap: 24px 8px;
+
+    @include for-tablet {
+      grid-template-columns: repeat(6, 80px);
+      gap: 25px;
+    }
   }
 
   &__item {
-    width: 130px;
+    width: 100%;
     position: relative;
     padding-top: 100%;
     z-index: -1;
     overflow: hidden;
 
+    @include for-tablet {
+      grid-column: span 3;
+      padding-top: 156px;
+    }
+
+    &--small {
+      @include for-tablet {
+        grid-column: span 2;
+      }
+    }
+
+    &--big {
+      @include for-tablet {
+        grid-column: span 4;
+      }
+    }
+
     &--mid {
       width: 88px;
       position: relative;
       padding-top: 100%;
+
+      @include for-tablet {
+        width: 181px;
+        grid-column: span 2;
+      }
     }
   }
 
@@ -41,6 +73,11 @@
       object-fit: cover;
       object-position: 18% 100%;
       transform: scale(1.4);
+
+      @include for-tablet {
+        transform: scale(1);
+        object-position: 0;
+      }
     }
 
     &--framed-right {
@@ -62,8 +99,16 @@
   &__description {
     grid-column: span 2;
 
+    @include for-tablet {
+      grid-column: span 6;
+    }
+
     &--mid {
       grid-column: span 3;
+
+      @include for-tablet {
+        grid-column: span 6;
+      }
     }
   }
 }
