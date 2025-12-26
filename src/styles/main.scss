@@ -8,12 +8,11 @@
 @use 'blocks/photos';
 @use 'blocks/button';
 @use 'blocks/gallery';
+@use 'blocks/explore';
 
 html {
   font-family: $main-font;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
   color: $main-dark;
   background-color: $background;
 }
