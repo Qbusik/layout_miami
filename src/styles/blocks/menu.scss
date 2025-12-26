@@ -13,6 +13,10 @@
   min-height: 100vh;
   box-sizing: border-box;
 
+  @include for-tablet {
+    padding: 0 72px 32px;
+  }
+
   @include grid;
 
   place-content: start space-between;
@@ -25,10 +29,18 @@
   &__links {
     margin-bottom: 30px;
     grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
   }
 
   &__navigation {
     grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
   }
 
   &__paragraph {
@@ -38,6 +50,10 @@
     text-transform: uppercase;
     color: $white;
     grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 6;
+    }
   }
 
   &__call-link {
