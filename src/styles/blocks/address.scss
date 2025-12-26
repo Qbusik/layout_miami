@@ -1,0 +1,22 @@
+.address {
+  width: 237px;
+  line-height: 27px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  &__bold {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}

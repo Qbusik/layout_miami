@@ -9,6 +9,10 @@
 @use 'blocks/button';
 @use 'blocks/gallery';
 @use 'blocks/explore';
+@use 'blocks/contact';
+@use 'blocks/address';
+@use 'blocks/form';
+@use 'blocks/footer';
 
 html {
   font-family: $main-font;
