@@ -68,7 +68,8 @@
         <a href="#home">
           <img
             src="src/images/icons/close.svg"
-            alt="close">
+            alt="close"
+            class="menu__close">
         </a>
 
       </nav>
@@ -299,23 +300,33 @@
           <div class="address">
             <p class="address__title">The Met Fifth Avenue</p>
             <p class="address__paragraph">Phone</p>
-            <p class="address__bold">+1 212-535-7710</p>
+            <p class="address__bold"><a href="tel:+1 212-535-7710" class="address__link">+1 212-535-7710</a></p>
             <p class="address__paragraph">Address</p>
             <p class="address__bold">
-              1000 Fifth Avenue<br>
-              New York, NY 10028
+              <a
+              href="https://www.google.com/maps/place/Metropolitan+Museum+of+Art/@40.7790653,-73.9653156,17z/data=!4m15!1m8!3m7!1s0x89c25896dcda965d:0x5bbcfab18ea2c739!2s1000+5th+Ave,+New+York,+NY+10028,+Stany+Zjednoczone!3b1!8m2!3d40.7790613!4d-73.9627407!16s%2Fg%2F1yl46zflv!3m5!1s0x89c25896f660c26f:0x3b2fa4f4b6c6a1fa!8m2!3d40.7794366!4d-73.963244!16zL20vMDljN2I?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+              class="address__link"
+              target="_blank">
+                1000 Fifth Avenue<br>
+                New York, NY 10028
+              </a>
             </p>
           </div>
 
           <div class="address">
             <p class="address__title">The Met Cloisters</p>
             <p class="address__paragraph">Phone</p>
-            <p class="address__bold">+1 212-923-3700</p>
+            <p class="address__bold"><a href="tel:+1 212-923-3700" class="address__link">+1 212-923-3700</a></p>
             <p class="address__paragraph">Address</p>
             <p class="address__bold">
-              99 Margaret Corbin Drive<br>
-              Fort Tryon Park<br>
-              New York, NY 10040
+              <a
+              href="https://www.google.com/maps/place/The+Cloisters/@40.8648668,-73.9343023,17z/data=!4m14!1m7!3m6!1s0x89c2f40170f2a62b:0x9191e7fa95df29ad!2sThe+Cloisters!8m2!3d40.8648628!4d-73.9317274!16zL20vMDFyczdi!3m5!1s0x89c2f40170f2a62b:0x9191e7fa95df29ad!8m2!3d40.8648628!4d-73.9317274!16zL20vMDFyczdi?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D"
+              class="address__link"
+              target="_blank">
+                99 Margaret Corbin Drive<br>
+                Fort Tryon Park<br>
+                New York, NY 10040
+              </a>
             </p>
           </div>
 
@@ -362,6 +373,29 @@
     </main>
 
     <footer class="footer"></footer>
+
+    <script>
+      const form = document.querySelector('.form');
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const message = document.querySelector('#message').value;
+        console.log(name, email, message);
+
+        form.reset();
+      });
+
+      window.addEventListener('hashchange', () => {
+        if (window.location.hash === '#menu') {
+          document.body.classList.add('page__body--with-menu');
+        } else {
+          document.body.classList.remove('page__body--with-menu');
+        }
+      });
+    </script>
 
   </body>
 </html>

@@ -21,4 +21,14 @@
     font-weight: $bold;
     margin-bottom: 8px;
   }
+
+  &__link {
+    text-decoration: none;
+    color: $main-dark;
+    transition: color $transition-time;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }

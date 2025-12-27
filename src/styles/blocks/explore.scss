@@ -54,6 +54,11 @@
   &__image {
     width: 280px;
     margin-bottom: 24px;
+    transition: $transition-time;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include for-tablet {
       width: 392px;

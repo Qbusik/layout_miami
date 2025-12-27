@@ -39,8 +39,13 @@
     width: 100%;
     position: relative;
     padding-top: 100%;
-    z-index: -1;
     overflow: hidden;
+    cursor: pointer;
+    transition: $transition-time;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include for-tablet {
       grid-column: span 3;
