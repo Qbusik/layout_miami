@@ -6,10 +6,6 @@
 
   justify-content: center;
 
-  @include for-tablet {
-    justify-content: center;
-  }
-
   &__title {
     font-weight: 700;
     margin-bottom: 48px;
@@ -33,6 +29,10 @@
     @include for-tablet {
       grid-column: span 6;
     }
+
+    @include for-desktop {
+      grid-column: span 12;
+    }
   }
 
   &__item {
@@ -41,13 +41,23 @@
     @include for-tablet {
       grid-column: span 3;
     }
+
+    @include for-desktop {
+      grid-column: span 7;
+      display: flex;
+    }
   }
 
   &__form {
-    margin-top: 48px;
+    grid-column: span 2;
 
     @include for-tablet {
+      grid-column: span 3;
       margin-top: 0;
+    }
+
+    @include for-desktop {
+      grid-column: span 5;
     }
   }
 }

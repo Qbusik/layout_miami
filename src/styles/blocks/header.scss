@@ -12,15 +12,20 @@
   background-position: center;
   color: $white;
 
-  @include for-tablet {
-    padding: 50px 72px;
-  }
-
   @include grid;
 
   justify-content: space-between;
   align-items: start;
   grid-template-rows: 1fr 1fr 1fr;
+
+  @include for-tablet {
+    padding: 50px 72px;
+  }
+
+  @include for-desktop {
+    padding: 50px 120px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
 
   &__top {
     grid-column: span 2;
@@ -31,6 +36,10 @@
 
     @include for-tablet {
       grid-column: span 6;
+    }
+
+    @include for-desktop {
+      grid-column: span 12;
     }
   }
 
@@ -82,6 +91,12 @@
       grid-column: span 6;
       font-size: 64px;
       line-height: 64px;
+    }
+
+    @include for-desktop {
+      grid-column: span 12;
+      font-size: 80px;
+      line-height: 80px;
     }
   }
 }

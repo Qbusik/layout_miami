@@ -8,10 +8,6 @@
 
   justify-content: center;
 
-  @include for-tablet {
-    justify-content: center;
-  }
-
   &__article {
     margin-top: 32px;
     grid-column: span 2;
@@ -19,6 +15,11 @@
     @include for-tablet {
       margin-top: 0;
       grid-column: span 3;
+    }
+
+    @include for-desktop {
+      margin-top: 0;
+      grid-column: span 7;
     }
   }
 
@@ -45,6 +46,10 @@
 
     @include for-tablet {
       grid-column: span 3;
+    }
+
+    @include for-desktop {
+      grid-column: span 5;
     }
   }
 

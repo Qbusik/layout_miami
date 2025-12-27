@@ -11,6 +11,7 @@
   line-height: 56px;
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 
   &:hover {
     background-color: $dark-accent;
@@ -18,5 +19,9 @@
 
   &:active {
     background-color: $light-accent;
+  }
+
+  &__form {
+    width: 100%;
   }
 }

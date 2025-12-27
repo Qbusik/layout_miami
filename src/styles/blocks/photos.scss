@@ -16,6 +16,10 @@
     gap: 24px;
   }
 
+  @include for-desktop {
+    grid-template-rows: 320px auto;
+  }
+
   &--mid {
     grid-template-columns: repeat(3, 88px);
     gap: 24px 8px;
@@ -23,6 +27,11 @@
     @include for-tablet {
       grid-template-columns: repeat(6, 80px);
       gap: 25px;
+    }
+
+    @include for-desktop {
+      grid-template-columns: repeat(12, 63px);
+      gap: 24px;
     }
   }
 
@@ -38,15 +47,28 @@
       padding-top: 156px;
     }
 
+    @include for-desktop {
+      grid-column: span 6;
+      padding-top: 320px;
+    }
+
     &--small {
       @include for-tablet {
         grid-column: span 2;
+      }
+
+      @include for-desktop {
+        grid-column: span 4;
       }
     }
 
     &--big {
       @include for-tablet {
         grid-column: span 4;
+      }
+
+      @include for-desktop {
+        grid-column: span 8;
       }
     }
 
@@ -58,6 +80,11 @@
       @include for-tablet {
         width: 181px;
         grid-column: span 2;
+      }
+
+      @include for-desktop {
+        width: 324px;
+        grid-column: span 4;
       }
     }
   }
@@ -103,11 +130,19 @@
       grid-column: span 6;
     }
 
+    @include for-desktop {
+      grid-column: span 12;
+    }
+
     &--mid {
       grid-column: span 3;
 
       @include for-tablet {
         grid-column: span 6;
+      }
+
+      @include for-desktop {
+        grid-column: span 12;
       }
     }
   }
