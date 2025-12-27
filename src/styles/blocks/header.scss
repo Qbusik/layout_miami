@@ -70,13 +70,34 @@
     margin: auto;
     width: 18px;
     height: 18px;
+    background-image: url(../images/icons/phone.svg);
   }
 
   &__burger {
-    display: block;
-    margin: auto;
-    width: 18px;
-    height: 12px;
+    &::before {
+      content: '';
+      background-image: url(../images/icons/burger.svg);
+      display: block;
+      width: 18px;
+      height: 12px;
+    }
+
+    &::after {
+      content: '';
+      background-image: url(../images/icons/burger-hover.svg);
+      width: 18px;
+      height: 12px;
+      display: none;
+    }
+
+    &:hover {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: block;
+      }
+    }
   }
 
   &__middle {
