@@ -56,8 +56,8 @@
   }
 
   &__paragraph {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: $bold;
+    font-size: $font-small;
     line-height: 27px;
     text-transform: uppercase;
     color: $white;
@@ -73,7 +73,7 @@
   }
 
   &__call-link {
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 2px;

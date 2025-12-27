@@ -19,18 +19,18 @@
 
   &__title {
     display: inline-block;
-    font-weight: 700;
+    font-weight: $bold;
     margin-bottom: 40px;
     margin-top: 20px;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: $font-big;
+    line-height: $font-big;
     letter-spacing: -1.5px;
+    width: 280px;
 
     @include for-tablet {
-      font-size: 48px;
-      line-height: 48px;
+      font-size: $font-huge;
+      line-height: $font-huge;
       width: 392px;
-      margin: 20px auto 48px;
     }
 
     @include for-desktop {
@@ -67,7 +67,7 @@
 
   &__sub-title {
     color: $accent-color;
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 4px;
@@ -75,8 +75,8 @@
 
   &__paragraph {
     width: 280px;
-    font-family: $roboto;
-    font-size: 16px;
+    font-family: $sec-font;
+    font-size: $font-small;
     line-height: 27px;
     margin: 0 auto;
 

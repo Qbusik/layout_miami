@@ -24,7 +24,7 @@
   }
 
   &__bold {
-    font-weight: 700;
+    font-weight: $bold;
   }
 
   &__open-time {
@@ -32,7 +32,7 @@
     flex-direction: row;
     justify-content: start;
     gap: 24px;
-    font-size: 16px;
+    font-size: $font-small;
   }
 
   &__item {
@@ -40,7 +40,7 @@
   }
 
   &__title {
-    font-weight: 700;
+    font-weight: $bold;
     width: 100%;
     grid-column: span 2;
 
@@ -61,21 +61,20 @@
   }
 
   &__name {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: $font-big;
+    line-height: $font-big;
     letter-spacing: -1.5px;
 
     @include for-tablet {
-      font-size: 48px;
-      line-height: 48px;
+      font-size: $font-huge;
+      line-height: $font-huge;
     }
   }
 
   &__title-2 {
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 24px;
     line-height: 30px;
-    letter-spacing: 0;
 
     &:nth-of-type(1) {
       @include for-tablet {

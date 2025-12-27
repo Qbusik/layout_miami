@@ -8,4 +8,8 @@
   @include for-tablet {
     padding: 0 75px;
   }
+
+  @include for-desktop {
+    padding: 0 120px;
+  }
 }

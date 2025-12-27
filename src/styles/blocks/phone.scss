@@ -4,9 +4,9 @@
 .phone {
   &__label {
     text-align: right;
-    font-size: 16px;
+    font-size: $font-small;
     line-height: 27px;
-    font-weight: 700;
+    font-weight: $bold;
     text-decoration: none;
     color: $white;
     text-transform: uppercase;
