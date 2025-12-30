@@ -2,18 +2,6 @@
 @use '../utils/mixins' as *;
 
 .gallery {
-  &__button {
-    margin-top: 40px;
-
-    @include for-tablet {
-      width: 392px;
-    }
-
-    @include for-desktop {
-      width: 324px;
-    }
-  }
-
   &__title {
     display: inline-block;
     margin-top: 20px;
@@ -29,6 +17,10 @@
 
   &__center {
     text-align: center;
+  }
+
+  &__photos {
+    margin-top: 48px;
   }
 
   &__description {

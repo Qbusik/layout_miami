@@ -51,7 +51,7 @@
     }
   }
 
-  &__lable {
+  &__label {
     &:not(:focus, :active) {
       @include visually-hidden;
     }

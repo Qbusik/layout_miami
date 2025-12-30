@@ -1,4 +1,5 @@
 @use '../utils/vars' as *;
+@use '../utils/mixins' as *;
 
 .button {
   width: 280px;
@@ -21,7 +22,19 @@
     background-color: $light-accent;
   }
 
-  &__form {
+  &--form {
     width: 100%;
+  }
+
+  &--gallery {
+    margin-top: 40px;
+
+    @include for-tablet {
+      width: 392px;
+    }
+
+    @include for-desktop {
+      width: 324px;
+    }
   }
 }

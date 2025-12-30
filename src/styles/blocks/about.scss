@@ -39,20 +39,6 @@
     }
   }
 
-  &__title {
-    font-weight: $bold;
-    width: 100%;
-    grid-column: span 2;
-
-    @include for-tablet {
-      grid-column: span 3;
-    }
-
-    @include for-desktop {
-      grid-column: span 5;
-    }
-  }
-
   &__accent {
     margin-top: 20px;
     color: $accent-color;
@@ -71,7 +57,21 @@
     }
   }
 
-  &__title-2 {
+  &__title {
+    font-weight: $bold;
+    width: 100%;
+    grid-column: span 2;
+
+    @include for-tablet {
+      grid-column: span 3;
+    }
+
+    @include for-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__branch-name {
     font-weight: $bold;
     font-size: 24px;
     line-height: 30px;

@@ -65,20 +65,6 @@
     }
   }
 
-  &__phone {
-    display: block;
-    margin: auto;
-    width: 18px;
-    height: 18px;
-    background-image: url(../images/icons/phone.svg);
-    background-size: cover;
-
-    @include for-tablet {
-      width: 24px;
-      height: 24px;
-    }
-  }
-
   &__burger {
     &::before {
       content: '';
