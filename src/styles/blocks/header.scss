@@ -71,23 +71,41 @@
     width: 18px;
     height: 18px;
     background-image: url(../images/icons/phone.svg);
+    background-size: cover;
+
+    @include for-tablet {
+      width: 24px;
+      height: 24px;
+    }
   }
 
   &__burger {
     &::before {
       content: '';
       background-image: url(../images/icons/burger.svg);
+      background-size: cover;
       display: block;
       width: 18px;
       height: 12px;
+
+      @include for-tablet {
+        width: 24px;
+        height: 16px;
+      }
     }
 
     &::after {
       content: '';
       background-image: url(../images/icons/burger-hover.svg);
+      background-size: cover;
       width: 18px;
       height: 12px;
       display: none;
+
+      @include for-tablet {
+        width: 24px;
+        height: 16px;
+      }
     }
 
     &:hover {

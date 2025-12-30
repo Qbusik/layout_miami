@@ -12,6 +12,11 @@
     text-transform: uppercase;
     position: absolute;
     transform: translateX(calc(-100% - 20px)) translateY(-40%);
+    display: none;
+
+    @include for-desktop {
+      display: block;
+    }
   }
 
   &:not(:hover) .phone__label {

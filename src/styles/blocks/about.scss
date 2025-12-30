@@ -27,16 +27,16 @@
     font-weight: $bold;
   }
 
-  &__open-time {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    gap: 24px;
-    font-size: $font-small;
-  }
-
   &__item {
     margin-top: 16px;
+
+    &--open-time {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      gap: 24px;
+      font-size: $font-small;
+    }
   }
 
   &__title {
